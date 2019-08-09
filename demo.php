@@ -3,7 +3,7 @@ use Yelehair\Yitemplate\Template;
 
 require __DIR__.'/vendor/autoload.php';
 /**
---普通边变量
+--普通变量
 {$name}
 
 --注释
