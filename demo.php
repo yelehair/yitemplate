@@ -1,5 +1,4 @@
 <?php
-
 use Yelehair\Yitemplate\Template;
 
 require __DIR__.'/vendor/autoload.php';
