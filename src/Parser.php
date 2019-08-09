@@ -61,8 +61,9 @@ class Parser
      */
     private function parForeach()
     {
-        $_pattenStartForeach  = '/\{foreach\s+\$([\w]+)\(([\w]+),([\w]+)\)\}/';
-        $_pattenMiddleForeach = '/\{@([\w]+)\}/';
+        //$_pattenStartForeach  = '/\{foreach\s+\$([\w]+)\(([\w]+),([\w]+)\)\}/';
+        $_pattenStartForeach  = '/\{foreach\s+\$([\w]+)\(\s*([\w]+)\s*,\s*([\w]+)\s*\)\}/';
+		$_pattenMiddleForeach = '/\{@([\w]+)\}/';
         $_pattenEndForeach    = '/\{\/foreach\}/';
         if ( preg_match($_pattenStartForeach, $this->_tplcontent) ) {
             if ( preg_match($_pattenEndForeach, $this->_tplcontent) ) {
