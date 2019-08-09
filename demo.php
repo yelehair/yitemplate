@@ -19,5 +19,7 @@ $template = new Template();
 //注入变量
 $template->assign('title', '标题');
 $template->assign('content', '这是我输出的内容');
+// index.tpl 文件内容如下
+
 //调用display方法
 $template->display('index.tpl');
